@@ -9,8 +9,11 @@ export default {
     Login
   },
   asyncData() {
-     
     console.log("登录页面-asyncData");
+  },
+  fetch({ redirect }) {
+    console.log("登录页面-fetch");
+    //redirect("/login");
   },
   mounted() {
     console.log("登录页面-mounted");
