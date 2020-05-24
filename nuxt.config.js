@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     mode: "spa",
     /*
      ** Headers of the page
@@ -56,5 +56,11 @@ export default {
                 //console.log("else product");
             }
         }
-    }
+    },
+    // devServer: {
+    //     before: require('./mock/mock-server.js')
+    // }
+    // env: {
+    //     NODE_ENV: process.env.NODE_ENV
+    // }
 };

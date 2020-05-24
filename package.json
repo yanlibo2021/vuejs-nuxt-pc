@@ -5,12 +5,14 @@
   "author": "shunl.li",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "cross-env NODE_ENV=production nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "cross-env": "^7.0.2",
     "echarts": "^4.2.1",
     "element-ui": "^2.4.11",
     "lodash": "^4.17.11",
@@ -21,6 +23,7 @@
     "body-parser": "^1.19.0",
     "chalk": "^4.0.0",
     "chokidar": "^3.4.0",
+    "express-http-proxy": "^1.6.0",
     "mockjs": "^1.1.0",
     "node-sass": "^4.12.0",
     "nodemon": "^1.18.9",
