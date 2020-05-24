@@ -11,7 +11,7 @@ const port = process.env.PORT || 7000
 
 app.set('port', port);
 
-console.log("process.env.NODE_ENV", process.env.NODE_ENV);
+// console.log("process.env.NODE_ENV", process.env.NODE_ENV);
 
 // Import and Set Nuxt.js options
 let config = require('../nuxt.config.js')

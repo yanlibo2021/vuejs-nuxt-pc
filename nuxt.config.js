@@ -48,10 +48,15 @@ module.exports = {
         extend(config, ctx) {
 
             if (ctx.isDev && ctx.isClient) {
-                //console.log("if dev")
-                // config.devServer = {
-                //     before: require('./mock/mock-server.js')
-                // }
+                console.log("if dev")
+                config.devServer = {
+                    // before: require('./mock/mock-server.js')
+                    // before(app) {
+
+                    //     console.log(' before(app) {');
+
+                    // }
+                }
             } else {
                 //console.log("else product");
             }
